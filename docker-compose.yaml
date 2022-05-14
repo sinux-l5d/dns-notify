@@ -1,0 +1,9 @@
+version: '3'
+services:
+  notifier:
+    container_name: dns-notifier
+    build: .
+    environment:
+      DOMAIN: $DOMAIN
+      PUSHOVER_APP_TOKEN: $PUSHOVER_APP_TOKEN
+      PUSHOVER_USER_KEY: $PUSHOVER_USER_KEY
